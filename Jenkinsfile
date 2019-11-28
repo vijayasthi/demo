@@ -20,7 +20,7 @@ pipeline {
     spec: '''{
           "files": [
             {
-              "pattern": ""build/*.zip",
+              "pattern": "build/*.zip",
               "target": "jenkins-release/zipFiles/"
             }
          ]
