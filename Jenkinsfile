@@ -11,25 +11,25 @@ pipeline {
                 echo 'Test build automation'
 			}
 		}
-	stage('Archive') {
+	stage('Publish') {
             steps {
                 echo 'Test build automation'
 		//bat 'C:/jfrog-artifactory-oss-6.15.0/artifactory-oss-6.15.0 jfrog rt u "build/*.zip" jenkins-release/zipFiles/'
 		rtUpload (
-    serverId: 'Artifactory 6.15.0',
-    spec: '''{
-          "files": [
-            {
-              "pattern": "C:/Users/vasthi/demo/build/distributions/",
-              "target": "jenkins-release/zipFiles/"
-            }
-         ]
-    }'''
-)
-			}
+    			serverId: 'Artifactory 6.15.0',
+    			spec: '''{
+          			"files": [
+            				{
+              				"pattern": "C:/Users/vasthi/demo/build/distributions/",
+              				"target": "jenkins-release/zipFiles/"
+            				}
+         				]
+    				}'''
+				)
+		}
 		}
 	}
-	    post {
+	post {
         success {
             echo 'I succeeeded!'
 	    echo "Succeeded Pipeline: ${currentBuild.fullDisplayName}"
