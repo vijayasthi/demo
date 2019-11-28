@@ -21,7 +21,7 @@ pipeline {
           			"files": [
             				{
               				"pattern": "C:/Users/vasthi/demo/build/distributions/",
-					"target": "jenkins-release/zipFiles/{${JOB_NAME}.${BUILD_NUMBER}.date}"
+					"target": "jenkins-release/zipFiles/{${env.JOB_NAME}.${env.BUILD_NUMBER}.date/}"
             				}
          				]
     				}'''
