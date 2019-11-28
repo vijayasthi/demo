@@ -34,6 +34,7 @@ pipeline {
             echo 'I succeeeded!'
 	    echo "Succeeded Pipeline: ${currentBuild.fullDisplayName}"
             echo "${env.BUILD_URL}"
+	    echo "${env.BUILD_NUMBER}"
         }
         failure {
             echo 'I failed :('
