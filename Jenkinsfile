@@ -11,6 +11,12 @@ pipeline {
                 echo 'Test build automation'
 			}
 		}
+	stage('Archive') {
+            steps {
+                echo 'Test build automation'
+		bat 'jfrog rt u "build/*.zip" jenkins-release/zipFiles/'
+			}
+		}
 	}
 	    post {
         success {
