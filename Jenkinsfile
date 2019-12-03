@@ -14,7 +14,7 @@ pipeline {
 		}
 	stage('Publish') {
             steps {
-                echo 'Test build automation'
+                echo 'Test publish automation'
 		//bat 'C:/jfrog-artifactory-oss-6.15.0/artifactory-oss-6.15.0 jfrog rt u "build/*.zip" jenkins-release/zipFiles/'
 		//    "target": "jenkins-release/zipFiles/${env.BUILD_NUMBER}/"
 		rtUpload (
