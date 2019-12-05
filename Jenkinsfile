@@ -4,9 +4,9 @@ pipeline {
         stage('Build') {
             steps {
                 bat './gradlew.bat --no-daemon --warning-mode all'
-		bat './gradlew clean build'
+		//bat './gradlew clean build'
 		//bat './gradlew clean build -x test'
-		//bat './gradlew clean build -x test -x integTest'
+		bat './gradlew clean build -x test -x e2e'
             }
 		}
         stage('unitTest') {
@@ -18,7 +18,7 @@ pipeline {
 	stage('e2eTest') {
             steps {
                 echo 'Test e2e build automation'
-		//bat './gradlew test'
+		bat './gradlew e2e'
 			}
 		}
 	stage('Publish') {
