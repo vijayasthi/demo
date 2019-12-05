@@ -34,6 +34,9 @@ pipeline {
 		}
 	}
 	post {
+	always {
+            junit 'build/reports/**/*.xml'
+        }
         success {
             echo 'I succeeeded!'
 	    echo "Succeeded Pipeline: ${currentBuild.fullDisplayName}"
