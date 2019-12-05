@@ -8,7 +8,7 @@ pipeline {
 		bat './gradlew clean build -x test'
             }
 		}
-        stage('unitTest') {
+        stage('Test') {
             steps {
                 echo 'Test build automation'
 		bat './gradlew test'
