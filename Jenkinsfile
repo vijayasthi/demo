@@ -5,20 +5,13 @@ pipeline {
             steps {
                 bat './gradlew.bat --no-daemon --warning-mode all'
 		//bat './gradlew clean build'
-		//bat './gradlew clean build -x test'
-		bat './gradlew clean build -x test -x e2e'
+		bat './gradlew clean build -x test'
             }
 		}
         stage('unitTest') {
             steps {
                 echo 'Test build automation'
 		bat './gradlew test'
-			}
-		}
-	stage('e2eTest') {
-            steps {
-                echo 'Test e2e build automation'
-		bat './gradlew e2e'
 			}
 		}
 	stage('Publish') {
