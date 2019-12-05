@@ -14,18 +14,7 @@ pipeline {
 		bat './gradlew test'
 			}
 		}
-	stage('Sonarqube') {
-		environment {
-        		scannerHome = tool 'SonarQubeScanner'
-    				}
-    		steps {
-        		withSonarQubeEnv('sonarqube-server') {
-            		//bat "${scannerHome}/bin/sonar-scanner"
-				//C:\sonar-scanner-cli-4.2.0.1873-windows\sonar-scanner-4.2.0.1873-windows\bin
-			bat 'C:/sonar-scanner-cli-4.2.0.1873-windows/sonar-scanner-4.2.0.1873-windows/bin/sonar-scanner'
-        		}
-		    }
-		}
+	
 	stage('Publish') {
             steps {
                 echo 'Test publish automation'
