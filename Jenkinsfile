@@ -14,6 +14,16 @@ pipeline {
 		bat './gradlew test'
 			}
 		}
+	stage('Sonarqube') {
+		environment {
+        		scannerHome = tool 'SonarQubeScanner'
+    				}
+    		steps {
+        		withSonarQubeEnv('sonarqube') {
+            		sh "${scannerHome}/bin/sonar-scanner"
+        		}
+		    }
+		}
 	stage('Publish') {
             steps {
                 echo 'Test publish automation'
