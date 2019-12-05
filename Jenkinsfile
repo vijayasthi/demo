@@ -15,6 +15,12 @@ pipeline {
 		bat './gradlew test'
 			}
 		}
+	stage('e2eTest') {
+            steps {
+                echo 'Test e2e build automation'
+		//bat './gradlew test'
+			}
+		}
 	stage('Publish') {
             steps {
                 echo 'Test publish automation'
