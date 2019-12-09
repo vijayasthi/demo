@@ -27,7 +27,7 @@ pipeline {
   		-Dsonar.host.url=http://localhost:9000 \
   		-Dsonar.login=378a17da3005b6b711b99d4bae3bd20b0b179079 \
 		-Dsonar.sources="C:/Program Files (x86)/Jenkins/workspace/demo_master/src/main/java" \
-		-Dsonar.sources="C:/Program Files (x86)/Jenkins/workspace/demo_master/src/test/java"'
+		-Dsonar.tests="C:/Program Files (x86)/Jenkins/workspace/demo_master/src/test/java"'
 		//-Dsonar.projectBaseDir="C:/Program Files (x86)/Jenkins/workspace/demo_master/build/libs"'
 		//-Dsonar.projectBaseDir="C:/Program Files (x86)/Jenkins/workspace/demo_master/build/libs"'
 		//-Dsonar.projectBaseDir="C:/Program Files (x86)/Jenkins/workspace/demo_master/build/classes/java/main/demo/"'
