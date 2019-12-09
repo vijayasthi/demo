@@ -26,7 +26,7 @@ pipeline {
   		-Dsonar.projectKey=demoproject \
   		-Dsonar.host.url=http://localhost:9000 \
   		-Dsonar.login=378a17da3005b6b711b99d4bae3bd20b0b179079 \
-		-Dsonar.projectBaseDir='C:/Program Files (x86)/Jenkins/workspace/demo_master/build/classes/'
+		-Dsonar.projectBaseDir="C:/Program Files (x86)/Jenkins/workspace/demo_master/build/classes/"'
         		}
 		    }
 	}
