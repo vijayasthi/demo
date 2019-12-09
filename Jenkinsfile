@@ -15,17 +15,10 @@ pipeline {
 			}
 		}
 	stage('Sonarqube') {
-		environment {
-        		scannerHome = tool 'SonarQubeScanner'
-    				}
-    		steps {
-        		withSonarQubeEnv('sonarqube-server') {
-            		//bat "${scannerHome}/bin/sonar-scanner"
-				//C:\sonar-scanner-cli-4.2.0.1873-windows\sonar-scanner-4.2.0.1873-windows\bin
-			bat 'C:/sonar-scanner-cli-4.2.0.1873-windows/sonar-scanner-4.2.0.1873-windows/bin/sonar-scanner'
-			//bat 
-        		}
-		    }
+		bat './gradlew sonarqube \
+  		-Dsonar.projectKey=demoproject \
+  		-Dsonar.host.url=http://localhost:9000 \
+  		-Dsonar.login=378a17da3005b6b711b99d4bae3bd20b0b179079'
 		}
 	
 	stage('Publish') {
