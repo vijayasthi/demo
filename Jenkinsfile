@@ -41,7 +41,7 @@ pipeline {
     			spec: '''{
           			"files": [
             				{
-              				"pattern": "C:/Users/vasthi/demo/build/distributions/",
+              				"pattern": "C:/Program Files (x86)/Jenkins/workspace/demo_master/build/distributions",
 					"target": "jenkins-release/zipFiles/${env.BUILD_NUMBER}/"
             				}
          				]
