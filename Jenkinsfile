@@ -30,6 +30,7 @@ pipeline {
 		-Dsonar.tests="C:/Program Files (x86)/Jenkins/workspace/demo_master/src/test/java"'
 		    }
 	}
+	}
 	
 	stage('Publish') {
             steps {
