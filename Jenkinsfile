@@ -28,7 +28,7 @@ pipeline {
   		-Dsonar.login=378a17da3005b6b711b99d4bae3bd20b0b179079 \
 		//-Dsonar.sources="C:/Program Files (x86)/Jenkins/workspace/demo_master/src/main/java" \
 		//-Dsonar.tests="C:/Program Files (x86)/Jenkins/workspace/demo_master/src/test/java"'
-		-Dsonar.sources={"C:/Program Files (x86)/Jenkins/workspace/demo_master/src/main/java", "C:/Program Files (x86)/Jenkins/workspace/demo_master/src/test/java"}'
+		-Dsonar.sources={"C:/Program Files (x86)/Jenkins/workspace/demo_master/src/main/java","C:/Program Files (x86)/Jenkins/workspace/demo_master/src/test/java"}'
         		}
 		    }
 	}
