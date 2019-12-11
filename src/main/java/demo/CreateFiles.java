@@ -8,7 +8,7 @@ public class CreateFiles {
         try{
             // Create new file
             String content = "This is the content to write into create file";
-            String path="C:\Users\vasthi\Desktop\hi.txt";
+            String path="C:/Users/vasthi/Desktop/hi.txt";
             File file = new File(path);
 
             // If file doesn't exists, then create it
