@@ -5,7 +5,7 @@ pipeline {
             steps {
                 bat './gradlew.bat --no-daemon --warning-mode all'
 		//bat './gradlew clean build'
-		bat './gradlew build'
+		bat './gradlew clean build'
             }
 		}
         stage('Test') {
