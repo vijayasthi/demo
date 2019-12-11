@@ -39,7 +39,6 @@ application {
     mainClassName = 'demo.App'
 }
 
-application {
-    // Define the main class for the application.
-    testClassName = 'demo.AppTest'
+task packageTests(type: Jar) {
+  from sourceSets.test.output
 }
