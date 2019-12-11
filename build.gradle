@@ -38,7 +38,3 @@ application {
     // Define the main class for the application.
     mainClassName = 'demo.App'
 }
-
-task packageTests(type: Jar) {
-  from sourceSets.test.output
-}
