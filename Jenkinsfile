@@ -64,6 +64,9 @@ pipeline {
           				]
     				}'''
 				)
+		  script{
+			unzip zipFile: 'dnzipfile/zipFiles/${env.BUILD_NUMBER}/demo.zip', archive: true, glob: '', dir: 'uzipFile/'
+                }
 		}
 		}
 	}
