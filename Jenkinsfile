@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Test build automation'
-		bat './gradlew test'
+		bat './gradlew test --tests AppTest'
 			}
 		}
 	stage('Sonarqube') {
