@@ -16,7 +16,7 @@ plugins {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'demo.*'
+        attributes 'Main-Class': 'demo/*.class'
     }
 }
 
@@ -36,6 +36,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClassName = 'demo.App'
-    mainClassName = 'demo.CreateFiles'
+    //mainClassName = 'demo.App'
+    //mainClassName = 'demo.CreateFiles'
+    mainClassName = ''demo/*.class'
 }
