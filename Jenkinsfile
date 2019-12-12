@@ -58,7 +58,7 @@ pipeline {
     			spec: '''{
           			"files": [
             				{
-              				"pattern": "jenkins-release/zipFiles/${env.BUILD_NUMBER}/demo.zip",
+              				"pattern": "jenkins-release/zipFiles/${env.BUILD_NUMBER}/",
               				"target": "dnzipfile/",
             				}
           				]
