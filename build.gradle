@@ -38,5 +38,5 @@ application {
     // Define the main class for the application.
     //mainClassName = 'demo.App'
     //mainClassName = 'demo.CreateFiles'
-    mainClassName = ''demo/*.class'
+    mainClassName = 'demo/*.class'
 }
