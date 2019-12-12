@@ -67,7 +67,7 @@ pipeline {
 		  script{
 			unzip zipFile: 'dnzipfile/zipFiles/${env.BUILD_NUMBER}/demo.zip', archive: true, glob: '', dir: 'uzipFile/'
                 }
-		  bat 'java -jar C:/Program Files (x86)/Jenkins/workspace/demo_master/uzipFile/demo/lib/demo.jar'
+		  bat 'java -jar uzipFile/demo/lib/demo.jar'
 		}
 		}
 	}
