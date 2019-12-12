@@ -23,7 +23,7 @@ public class FileTest {
 Path path = Paths.get("C:/Users/vasthi/Desktop/hi.txt");
 
 if (Files.exists(path)) {
-  assertTrue;
+  assertTrue();
 }
     }
 }
