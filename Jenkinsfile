@@ -50,6 +50,22 @@ pipeline {
 				)
 		}
 		}
+	 stage('finaltest') {
+            steps {
+                echo 'Final tests execution'
+		rtDownload (
+    			serverId: 'Artifactory 6.15.0',
+    			spec: '''{
+          			"files": [
+            				{
+              				"pattern": "jenkins-release/zipFiles/${env.BUILD_NUMBER}/demo.zip",
+              				"target": "dnzipfile/",
+            				}
+          				]
+    				}'''
+				)
+		}
+		}
 	}
 	post {
 	always {
