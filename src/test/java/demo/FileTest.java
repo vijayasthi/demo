@@ -7,7 +7,7 @@ import java.nio.file.*;
 import static org.hamcrest.MatcherAssert.assertThat; 
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.MatcherAssert.*;
-import static org.hamcrest.io.FileMatchers;
+import static org.hamcrest.io.FileMatchers.*;
 
 public class FileTest {
     @Test public void testFileisCreated() {
