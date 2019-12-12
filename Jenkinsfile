@@ -67,7 +67,8 @@ pipeline {
 			unzip zipFile: 'dnzipfile/zipFiles/${env.BUILD_NUMBER}/demo.zip', archive: true, glob: '', dir: 'uzipFile/'
                 }
 		  bat 'java -jar uzipFile/demo/lib/demo.jar'
-		  bat './gradlew test --tests FileTest'
+		  //bat './gradlew test --tests FileTest'
+		  bat './gradlew test'
 		}
 		}
 	}
