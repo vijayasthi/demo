@@ -31,7 +31,7 @@ public class FileTest {
 //}
         
         
-    File file = new File("C:/Users/vasthi/Desktop/h1i.txt");
+    File file = new File("C:/Users/vasthi/Desktop/hi.txt");
      
     assertThat(file, anExistingFile());
     assertThat(file, anExistingFileOrDirectory());        
