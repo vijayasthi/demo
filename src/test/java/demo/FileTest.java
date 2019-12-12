@@ -8,7 +8,11 @@ public class FileTest {
         //File file = new File("C:/Users/vasthi/Desktop/hi.txt");
         //assertTrue(file.exists());
         //assertTrue(Paths.get("C:/Users/vasthi/Desktop/hi.txt").toFile().exists());
-        Path p = Paths.get("C:/Users/vasthi/Desktop/hi.txt");
-        assertTrue(Files.exists(p));
+        //Path p = Paths.get("C:/Users/vasthi/Desktop/hi.txt");
+        a//ssertTrue(Files.exists(p));
+        
+        if(Files.exists(Paths.get("C:/Users/vasthi/Desktop/hi.txt"))) { 
+            assertTrue
+            }
     }
 }
