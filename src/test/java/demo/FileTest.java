@@ -6,6 +6,7 @@ import java.io.File;
 import java.nio.file.*;
 import static org.hamcrest.MatcherAssert.assertThat; 
 import static org.hamcrest.Matchers.*;
+import static org.hamcrest.MatcherAssert.*;
 
 public class FileTest {
     @Test public void testFileisCreated() {
