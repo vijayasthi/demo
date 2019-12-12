@@ -20,7 +20,7 @@ public class FileTest {
         
 
 
-Path path = Paths.get("C:/Users/vasthi/Desktop/hi.txt");
+Path path = Paths.get("C:/Users/vasthi/Desktop/h1i.txt");
 
 if (Files.exists(path)) {
   System.out.println("File exists!");
