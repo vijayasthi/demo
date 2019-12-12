@@ -20,10 +20,16 @@ public class FileTest {
         
 
 
-Path path = Paths.get("C:/Users/vasthi/Desktop/h1i.txt");
+//Path path = Paths.get("C:/Users/vasthi/Desktop/h1i.txt");
 
-if (Files.exists(path)) {
-  System.out.println("File exists!");
-}
+//if (Files.exists(path)) {
+ // System.out.println("File exists!");
+//}
+        
+        
+    File file = new File("C:/Users/vasthi/Desktop/h1i.txt");
+     
+    assertThat(file, anExistingFile());
+    assertThat(file, anExistingFileOrDirectory());        
     }
 }
