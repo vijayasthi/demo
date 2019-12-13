@@ -77,16 +77,27 @@ pipeline {
             junit 'build/test-results/test/*.xml'
         }
         success {
-            echo 'I succeeeded!'
-	    echo "Succeeded Pipeline: ${currentBuild.fullDisplayName}"
-            echo "${env.BUILD_URL}"
-	    echo "${env.BUILD_NUMBER}"
-	    echo "${env.BUILD_NAME}"
+		echo 'I succeeeded!'
+		echo "Succeeded Pipeline: ${currentBuild.fullDisplayName}"
+		echo "BUILD_URL: ${env.BUILD_URL}"
+		echo "BUILD_NUMBER: ${env.BUILD_NUMBER}"
+		echo "JOB_NAME: ${env.JOB_NAME}"
+		echo "JOB_BASE_NAME: ${env.JOB_BASE_NAME}"
+		echo "BUILD_TAG: ${env.BUILD_TAG}"
+		echo "EXECUTOR_NUMBER: ${env.EXECUTOR_NUMBER}"
+		echo "NODE_NAME: ${env.NODE_NAME}"
+		echo "NODE_LABELS: ${env.NODE_LABELS}"
+		echo "WORKSPACE: ${env.WORKSPACE}"
+		echo "JENKINS_HOME: ${env.JENKINS_HOME}"
+		echo "JENKINS_URL: ${env.JENKINS_URL}"
+		echo "BUILD_ID: ${env.BUILD_ID}"
+		echo "JOB_URL: ${env.JOB_URL}"
+		echo "BUILD_DISPLAY_NAME: ${env.BUILD_DISPLAY_NAME}"
         }
         failure {
             echo 'I failed :('
 	    echo "Failed Pipeline: ${currentBuild.fullDisplayName}"
-            echo "${env.BUILD_URL}"
+            echo "BUILD_URL: ${env.BUILD_URL}"
         }
     }
 }
