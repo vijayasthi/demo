@@ -81,6 +81,7 @@ pipeline {
 	    echo "Succeeded Pipeline: ${currentBuild.fullDisplayName}"
             echo "${env.BUILD_URL}"
 	    echo "${env.BUILD_NUMBER}"
+	    echo "${env.BUILD_NAME}"
         }
         failure {
             echo 'I failed :('
